@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Accessibility</title>
+
+</head>
+
+<body>
+
+    <!-- Accessible Header -->
+
+    <header>
+
+        <h1>My Website</h1>
+
+        <nav aria-label="Main Navigation">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main id="home">
+
+        <section aria-labelledby="about-title">
+
+            <h2 id="about-title">About Me</h2>
+
+            <p>
+                I am learning advanced HTML and web development.
+            </p>
+
+        </section>
+
+
+        <!-- Accessible Image -->
+
+        <section>
+
+            <h2>My Photo</h2>
+
+            <img
+                src="/images/detait-budapest-10333108.jpg"
+                alt="Raju standing near a computer"
+                width="300">
+
+        </section>
+
+
+        <!-- Accessible Form -->
+
+        <section id="contact">
+
+            <h2>Contact Form</h2>
+
+            <form>
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required>
+
+                <br><br>
+
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required>
+
+                <br><br>
+
+
+                <label for="message">
+                    Your Message
+                </label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="30"
+                    required>
+                </textarea>
+
+                <br><br>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Copyright © 2026 My Website
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
