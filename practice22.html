@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced HTML Form</title>
+
+</head>
+
+<body>
+
+    <h1>Advanced Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <!-- Full Name -->
+
+        <label for="name">Full Name:</label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            minlength="3"
+            maxlength="50"
+            required>
+
+        <br><br>
+
+
+        <!-- Email -->
+
+        <label for="email">Email:</label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            autocomplete="email"
+            required>
+
+        <br><br>
+
+
+        <!-- Password -->
+
+        <label for="password">Password:</label>
+
+        <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            maxlength="20"
+            required>
+
+        <br><br>
+
+
+        <!-- Age -->
+
+        <label for="age">Age:</label>
+
+        <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="60"
+            step="1"
+            required>
+
+        <br><br>
+
+
+        <!-- Date -->
+
+        <label for="date">Date:</label>
+
+        <input
+            type="date"
+            id="date"
+            name="date"
+            min="2000-01-01"
+            max="2026-12-31"
+            required>
+
+        <br><br>
+
+
+        <!-- Range -->
+
+        <label for="experience">
+            Experience:
+        </label>
+
+        <input
+            type="range"
+            id="experience"
+            name="experience"
+            min="0"
+            max="10"
+            value="2">
+
+        <br><br>
+
+
+        <!-- Color -->
+
+        <label for="color">Choose Color:</label>
+
+        <input
+            type="color"
+            id="color"
+            name="color">
+
+        <br><br>
+
+
+        <!-- File Upload -->
+
+        <label for="file">Upload Resume:</label>
+
+        <input
+            type="file"
+            id="file"
+            name="file"
+            accept=".pdf,.doc,.docx">
+
+        <br><br>
+
+
+        <!-- Website -->
+
+        <label for="website">Website:</label>
+
+        <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://example.com">
+
+        <br><br>
+
+
+        <!-- Search -->
+
+        <label for="search">Search:</label>
+
+        <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search here...">
+
+        <br><br>
+
+
+        <!-- Hidden Value -->
+
+        <input
+            type="hidden"
+            name="user_id"
+            value="101">
+
+        <!-- Submit -->
+
+        <button type="submit">
+            Register
+        </button>
+
+        <button type="reset">
+            Reset
+        </button>
+
+    </form>
+
+</body>
+
+</html>
